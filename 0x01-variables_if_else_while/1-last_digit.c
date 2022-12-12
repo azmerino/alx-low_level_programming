@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+/**
+ * main - Prints te last digit of a randomlygenerated number
+ * and whether it is greater than 5, less than 6, or 0.
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	int n;
+
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
+
+	if ((n % 10) > 5)
+	{
+		pritf("ast digit of %dis %d nd is greater than 5\n", n, n % 10);
+		else if ((n % 10) < 6 && (n % 10) != 0)
+		{
+		printf("Last digit of %d id %d and is less than 6 and not 0\n", n, n % 10);
+		}
+		else
+		{
+		pritf("Last digit of %d is %d and is 0\n", n, n % 10);
+		}
+		return (0);
